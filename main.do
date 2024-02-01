@@ -16,3 +16,17 @@ else if "`c(username)'" == "" {
 
 * Set up adofolder
 repado using "${clone}/ado"
+
+
+******************************************
+* Run all code for this project
+
+
+* Set up data
+"${clone}/clean/cleaning.do"
+
+* Construct data
+"${clone}/construct/construct.do"
+
+* Analyze data
+"${clone}/analyze/analyze.do"
