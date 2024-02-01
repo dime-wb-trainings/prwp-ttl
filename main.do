@@ -23,10 +23,10 @@ repado using "${clone}/ado"
 
 
 * Set up data
-"${clone}/clean/cleaning.do"
+do "${clone}/clean/cleaning.do"
 
 * Construct data
-"${clone}/construct/construct.do"
+do "${clone}/construct/construct.do"
 
 * Analyze data
-"${clone}/analyze/analyze.do"
+do "${clone}/analysis/analysis.do"
