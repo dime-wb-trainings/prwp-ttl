@@ -22,7 +22,7 @@
   label variable length "Length (m)"
 
   * Feet to meter
-  replace turn = turn * `in_to_m'
+  replace turn = turn * `ft_to_m'
   label variable turn "Turn circle (m)"
 
   * Cubic feet to cubic meters
