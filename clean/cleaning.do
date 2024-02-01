@@ -32,6 +32,10 @@
   * Cubic inches to cubic meters
   replace displacement = displacement * `in3_to_m3'
   label variable displacement "Displacement (m3)"
-  
+
+  * Pounds to kg
+  replace weight = weight * `lbs_to_kg'
+  label variable weight "Weight (kg)"
+
 
   save "${clone}/data/clean_auto.dta", replace
