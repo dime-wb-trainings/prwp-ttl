@@ -2,6 +2,9 @@
   * Use the clean dataset
   use "${clone}/data/clean_auto.dta", clear
 
+  *****************
+  * scale mpg based on rep78
+  replace mpg = mpg * rep78
   * Set version - first step in reproducible randomization
   version 14.1
 
