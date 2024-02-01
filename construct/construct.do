@@ -20,5 +20,12 @@
   * Restore original sort order
   isid make, sort
 
+  *****************
+  * standardize headroom
+
+  qui sum price
+  replace price = (price - r(mean)) / r(sd)
+  label variable price "Price (z-score)"
+
   * Save contructed data set
   save "${clone}/data/construted_auto.dta", replace
